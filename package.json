@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run tailwind && vite build",
     "preview": "vite preview",
     "tailwind": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
   },
+
   "devDependencies": {
     "vite": "^7.1.7"
   },
