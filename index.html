@@ -165,7 +165,7 @@
 
     <!-- ================= ABOUT ME ================= -->
 
-    <div class=" pt-12 pb-24 bg-gray-300 text-center">
+    <class class=" pt-12 pb-24 bg-gray-300 text-center">
       <div class=" container mx-auto px-6 lg:px-0">
         <h2 class="mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-teal-900">
           Some Tailwind Videos I've Done
@@ -499,38 +499,189 @@
         </div>
       </div>
 
+
       <!-- ================= PRICING ================= -->
-      <div class="bg-blue-300 py-32 text-blue-100">
-        <div class="container mx-auto px-6 lg:px-0">
+
+      <div class="relative bg-blue-300 py-32 text-blue-100">
+
+        <!-- Responsive gray bar -->
+        <div class="absolute top-0 inset-x-0 h-24 sm:h-32 md:h-40 lg:h-48 bg-gray-300"></div>
+
+        <div
+          class="container mx-auto px-6 lg:px-0 items-center flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
 
           <!-- ================= LEFT BOX ================= -->
-          <div>
-            <p>75 videos at a smooth pace</p>
-            <p>9.25 hours of learning + building
-
-              Source code and CodePens</p>
-            <p>Source code and CodePens</p>
+          <div class="w-full lg:w-1/3 text-center lg:text-right space-y-2 text-base sm:text-lg lg:text-2xl">
+            <p><strong class="font-bold text-white">XY videos</strong> at a smooth pace</p>
+            <p><strong class="font-bold text-white">AB 9.25 hours</strong> of learning + building</p>
+            <p><strong class="font-bold text-white">Source code</strong> and CodePens</p>
           </div>
-
 
           <!-- ================= PRICE BOX ================= -->
-          <div>
-            <h4>Start Tailwind<span>-ing!</span></h4>
-            <div>$
-              47
-              14.10</div>
-            <a href="">Buy This Course</a>
+          <div
+            class="bg-white p-8 w-full sm:w-96 h-80 text-gray-800 rounded shadow-2xl border-8 border-purple-800 text-center flex flex-col justify-between transform hover:scale-105 transition duration-300 relative z-10">
+            <div class="absolute top-0 inset-x-0 transform -translate-y-full flex justify-center items-end space-x-8">
+              <div class="w-2 h-16 bg-red-600 mb-12 rounded transform -rotate-45 origin-bottom"></div>
+              <div class="w-2 h-24 bg-yellow-400 mb-12 rounded"></div>
+              <div class="w-2 h-16 bg-green-400 mb-12 rounded transform rotate-45 origin-bottom"></div>
+            </div>
+            <h4 class="text-gray-600 text-sm">
+              Start Tailwind<span class="itali">-ing!</span>
+            </h4>
+            <div class="text-2xl text-purple-800 font-bold mb-2">$47 14.10</div>
+            <a href=""
+              class="block p-4 bg-purple-500 text-purple-100 rounded shadow bg-gradient-to-br from-purple-300 to-purple-500 hover:from-purple-500 hover:to-purple-900 hover:text-white font-bold text-sm sm:text-base tracking-wide transition duration-300">
+              Buy This Course
+            </a>
           </div>
 
-
-
-          <div>
-            <p>Use the code in your projects</p>
-            <p>Access to Discord for support</p>
-            <p>Lifetime refund guarantee</p>
+          <!-- ================= RIGHT BOX ================= -->
+          <div class="w-full lg:w-1/3 text-center lg:text-left space-y-2 text-base sm:text-lg lg:text-2xl">
+            <p><strong class="font-bold text-white">Use the code in</strong> your projects</p>
+            <p>Access to <strong class="font-bold text-white">Discord</strong> for support</p>
+            <p><strong class="font-bold text-white">Lifetime</strong> refund guarantee</p>
           </div>
         </div>
       </div>
+
+
+
+      <!-- ================= FAQ ================= -->
+
+      <div class="bg-gray-800 py-32 text-gray-400">
+        <div class="container mx-auto px-6 lg:px-0">
+          <h2 class="mb-12 text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white">
+            Frequently Asked Questions
+          </h2>
+
+          <!-- One grid container -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Do I need to know CSS?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Yes! Tailwind is a CSS framework so you will need to know CSS properties to use Tailwind effectively.
+                This course will teach you the CSS concepts you need to know to create good looking designs with
+                Tailwind.
+              </p>
+            </div>
+
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Will this course cover Flexbox & Grid?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Yes, you’ll learn how to use Tailwind utilities for Flexbox and Grid, and how they work under the hood.
+              </p>
+            </div>
+
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Can I use Tailwind with React or Vue?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Absolutely. Tailwind works great with React, Vue, Angular, or even plain HTML projects.
+              </p>
+            </div>
+
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Do I need prior experience?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Some basic HTML and CSS knowledge is helpful, but the course explains everything step by step.
+              </p>
+            </div>
+
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Is there a refund guarantee?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Yes, we offer a lifetime refund guarantee. If you’re not happy, you get your money back.
+              </p>
+            </div>
+            <div class="p-8 border-2 border-gray-500 rounded-lg">
+              <h3 class="font-bold mb-4 text-lg sm:text-xl text-white">Is there a refund guarantee?</h3>
+              <p class="text-base sm:text-lg leading-relaxed">
+                Yes, we offer a lifetime refund guarantee. If you’re not happy, you get your money back.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative bg-gradient-to-br from-gray-100 to-gray-400 py-24 text-gray-600 overflow-hidden">
+
+        <!--CIRCLE-->
+        <div class="absolute top-6 left-6 z-0">
+          <div class="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-teal-200 opacity-40"></div>
+          <div
+            class="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 ml-8 sm:ml-10 md:ml-12 rounded-full bg-purple-200 opacity-50">
+          </div>
+          <div
+            class="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 ml-4 sm:ml-6 mt-8 sm:mt-10 md:mt-12 rounded-full bg-red-200 opacity-50">
+          </div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 lg:px-0 space-y-16">
+
+          <!-- ================= TOP FOOTER ================= -->
+          <div class="flex flex-col lg:flex-row justify-between gap-12">
+            <!-- ================= NEWSLETTER ================= -->
+            <div class="flex flex-col space-y-4 justify-center items-center w-full lg:w-1/2">
+              <div class="w-full max-w-2xl">
+                <h3
+                  class="font-bold mb-4 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-900 text-center lg:text-left">
+                  Get updates on this course and more!
+                </h3>
+                <form action="" method="POST" class="flex w-full">
+                  <input type="email" name="email" placeholder="allanlucky@gmail.com"
+                    class="w-full p-3 rounded-l border-2 border-r-0 border-gray-400 focus:outline-none focus:border-purple-500 placeholder-gray-300">
+                  <button type="submit"
+                    class="p-3 bg-purple-500 text-purple-100 rounded-r whitespace-nowrap hover:bg-purple-600 transition">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- ================= LINKS ================= -->
+            <div class="flex flex-col sm:flex-row sm:justify-end text-center sm:text-right gap-12 w-full lg:w-1/2">
+              <div class="space-y-2">
+                <p class="mb-4 font-bold tracking-widest uppercase">company</p>
+                <a href="" class="block hover:text-gray-800 hover:underline">About</a>
+                <a href="" class="block hover:text-gray-800 hover:underline">Blog</a>
+                <a href="" class="block hover:text-gray-800 hover:underline">Careers</a>
+              </div>
+              <div class="space-y-2">
+                <p class="mb-4 font-bold tracking-widest uppercase">products</p>
+                <a href="" class="block hover:text-gray-800 hover:underline">Pricing</a>
+                <a href="" class="block hover:text-gray-800 hover:underline">Documentation</a>
+                <a href="" class="block hover:text-gray-800 hover:underline">Guides</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= BOTTOM FOOTER ================= -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center border-t border-gray-400 pt-4 mt-12 text-gray-800 gap-4">
+
+            <!-- ================= COPYRIGHT ================= -->
+            <div class="text-center md:text-left text-sm">Copyright &copy; 2025. All rights reserved. Build and
+              developed
+              by AllanLucky.</div>
+
+            <!-- ================= SOCIAL LINKS ================= -->
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-600 hover:text-blue-600 transition">Facebook</a>
+              <a href="#" class="text-gray-600 hover:text-sky-500 transition">Twitter</a>
+              <a href="#" class="text-gray-600 hover:text-blue-700 transition">LinkedIn</a>
+              <a href="#" class="text-gray-600 hover:text-green-500 transition">WhatsApp</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
 
 
 
